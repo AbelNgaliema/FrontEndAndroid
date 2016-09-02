@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#DDDDDD">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bottomlayout"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="Add User"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:onClick="addRecord"
+            />
+
+        <Button
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="View Users"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:onClick="displayAll"
+            android:layout_weight="0.08"
+            />
+
+        <Button
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:onClick="updateRecord"
+            />
+
+        <Button
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:text="Delete All"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.16"
+            android:onClick="deleteAll" />
+
+    </LinearLayout>
+
+</LinearLayout>
